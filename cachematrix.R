@@ -1,6 +1,6 @@
-## Funkcja liczy macierz odwrócon¹
+## Program computes inverted matrix
 
-## Oblicza macierz specjaln¹
+## Computes special matrix
 
 makeCacheMatrix <- function(macierz = matrix()){
 	macierz_policz <<- matrix()
@@ -14,7 +14,7 @@ makeCacheMatrix <- function(macierz = matrix()){
 						get_matrix_inv = get_matrix_inv)
 }
 
-## Liczy macierz odwrócon¹
+## Invert the matrix if needed (or get cached data)
 
 cacheSolve <- function(mm){
 	macierz_policz <- x$get_matrix()
@@ -32,7 +32,7 @@ cacheSolve <- function(mm){
 	}
 }
 
-##przyk³adowy program
+##Example of using functions
 a<-matrix(, 2, 2)
 a[1,1] = 49
 a[1,2] = 27
